@@ -1,0 +1,123 @@
+.Wrap {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* header_menu */
+.left_gnb {
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 22rem;
+display: flex;
+flex-direction: column;
+background: #fff;
+box-shadow: 0px -1px 5px #ccc;
+}
+.left_gnb.on {
+    display: none;
+}
+
+.left_gnb .logo {
+    height: 8rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.left_gnb .gnb {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #777777;
+}
+
+.left_gnb .gnb li {
+    margin: 50px 0;
+}
+
+.left_gnb .gnb li:hover{
+    color: #000;
+    transform: 0.2s;
+}
+.left_gnb .footer {
+    text-align: center;
+margin-top: 300px;
+}
+/* header_menu */
+
+/* main */
+
+main {
+    flex: 1 1 0%;
+    margin-top: 0;
+    margin-left: 22rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(244, 245, 246);
+}
+main.on{
+    margin-left: 0;
+}
+
+main .tit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    padding: 0 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625rem 0.625rem;
+    background: #fff;
+    font-size: 20px;
+
+}
+
+main .tit .left_menu {
+    cursor: pointer;
+}
+main .tit .right_menu {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+main .tit .right_menu .tit_login_menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 160px;
+    font-size: 15px;
+
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.125rem 0.125rem 0.625rem;
+    border-radius: 0.375rem;
+}
+main .tit .right_menu .tit_login_menu li {
+    height: 2.8125rem;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    line-height: 1.375rem;
+    cursor: pointer;
+}
+
+main .tit .right_menu .tit_login_menu li:hover {
+    color: #000;
+}
+
+main .tit .right_menu .tit_login_menu.on{
+    display: block;
+}
